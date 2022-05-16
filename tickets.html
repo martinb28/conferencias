@@ -100,25 +100,24 @@
             </div>
             <div class="col-md">
               <div class="form-floating">
-                <select class="form-select" id="floatingSelectGrid">
-                  <option selected>Selecciona una opción</option>
-                  <option value="1">Estudiante</option>
-                  <option value="2">Trainee</option>
-                  <option value="3">Junior</option>
+                <select class="form-select" id="floatingSelectGrid">                  
+                  <option value="0.80">Estudiante</option>
+                  <option value="0.50">Trainee</option>
+                  <option value="0.15">Junior</option>
                 </select>
                 <label for="floatingSelectGrid">Categoria</label>
               </div>
             </div>
           </div>
 
-          <div class="alert alert-primary mt-3" role="alert">
-            Total a Pagar: $ <p id='total'></p>
+          <div class="alert alert-primary mt-3 container col"role="alert">
+            <p id='total'>Total a Pagar: $ </p>
           </div>
 
           <div class="container row ">
             <div class="col">
               <button type="submit" class="btn btn-success ms-0 mb-3 col-5">Borrar</button>
-              <button type="submit" class="btn btn-success ms-0 mb-3 col-5 ms-3" onclick="prueba()">Resumen</button>
+              <button type="button" class="btn btn-success ms-0 mb-3 col-5 ms-3" onclick="prueba()">Resumen</button>
             </div>
           </div>
         </form>
