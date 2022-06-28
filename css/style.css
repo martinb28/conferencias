@@ -42,8 +42,7 @@
   padding: 0 !important;
 }
 
-#header-tickets {  
-  height: 1000px;
+#tickets {    
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;  
