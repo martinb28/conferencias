@@ -46,85 +46,33 @@
             </div>
         </nav>
       </header>
-        <section>
-            <div class="row row-cols-1 g-4">
-                <div class ="row row-cols-1 g-4 d-flex justify-content-center">
-                    <div class="card border-info mb-3" style="max-width: 18rem;">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Estudiante</h5>
-                            <p class="card-text">Tiene un descuento</p>
-                            <h5 class="card-title">80%</h5>
-                            <p class="card-text">*presentar documentación</p>
-                        </div>
-                    </div>
-
-                    <div class="card border-success mb-3 mx-3" style="max-width: 18rem;">            
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Trainee</h5>
-                            <p class="card-text">Tiene un descuento</p>
-                            <h5 class="card-title">50%</h5>
-                            <p class="card-text">*presentar documentación</p>
-                        </div>
-                    </div>
-
-                    <div class="card border-warning mb-3" style="max-width: 18rem;">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Junior</h5>
-                            <p class="card-text">Tiene un descuento</p>
-                            <h5 class="card-title">15%</h5>
-                            <p class="card-text">*presentar documentación</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="text-center">
-            <h5>VENTA</h5>
-            <h1>VALOR DE TICKET $200</h1>
-        </section>
-        <form class="container" action="">
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-            </div>
+      <section class="container mt-5">
+        <form class="row g-3 ">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
           </div>
-          <div class="mb-3 mt-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Correo">
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido">
           </div>
-
-          <div class="row g-2">
-            <div class="col-md">
-              <div class="form-floating">
-                <input type="number" id="cantidad" class="form-control" id="floatingInputGrid" placeholder="Cantidad" >
-                <label for="floatingInputGrid">Cantidad</label>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="form-floating">
-                <select class="form-select" id="floatingSelectGrid">                  
-                  <option value="0.80">Estudiante</option>
-                  <option value="0.50">Trainee</option>
-                  <option value="0.15">Junior</option>
-                </select>
-                <label for="floatingSelectGrid">Categoria</label>
-              </div>
-            </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
           </div>
-
-          <div class="alert alert-primary mt-3 container col"role="alert">
-            <p id='total'>Total a Pagar: $ </p>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Clave</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>          
+          <div class="col-md-6">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="edad">
           </div>
-
-          <div class="container row ">
-            <div class="col">
-              <button type="submit" class="btn btn-success ms-0 mb-3 col-5">Borrar</button>
-              <button type="button" class="btn btn-success ms-0 mb-3 col-5 ms-3" onclick="prueba()">Resumen</button>
-            </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
           </div>
         </form>
+      </section>
 
 
         <footer class="fixed-bottom">
