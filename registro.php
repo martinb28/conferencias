@@ -1,20 +1,20 @@
 <?php
 
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$mail = $_POST['mail'];
-$clave = $_POST['clave'];
-$edad = $_POST['edad'];
+include 'conexion.php';
 
-echo '<br>';
-echo $nombre;
-echo '<br>';
-echo $apellido;
-echo '<br>';
-echo $mail;
-echo '<br>';
-echo $clave;
-echo '<br>';
-echo $edad;
+
+$apellido = $_POST['apellido'];
+$nombre = $_POST['nombre'];
+$correo = $_POST['mail'];
+$edad = $_POST['edad'];
+$clave = $_POST['clave'];
+
+$sqlInsert = "INSERT INTO usuarios(id_usuarios, apellido, nombre, correo, edad, clave)
+VALUES(NULL, '$apellido', '$nombre', '$correo', $edad, '$clave')";
+
+$insert = mysqli_query($conexion, $sqlInsert);
 
 ?>
+
+
+
