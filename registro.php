@@ -1,6 +1,6 @@
 <?php
 
-include 'conexion.php';
+include 'functions/conexion.php';
 
 
 $apellido = $_POST['apellido'];

@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+include 'functions/conexion.php';
 
 $consultas = mysqli_query($conexion, "select * from usuarios");
 
