@@ -14,6 +14,8 @@ VALUES(NULL, '$apellido', '$nombre', '$correo', $edad, '$clave')";
 
 $insert = mysqli_query($conexion, $sqlInsert);
 
+echo "Registrado exitosamente";
+
 ?>
 
 

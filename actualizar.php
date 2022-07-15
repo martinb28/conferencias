@@ -2,7 +2,7 @@
 
 include 'functions/conexion.php';
 
-$id = 5;
+$id = $_GET['id'];
 
 $queryUpdate = "UPDATE usuarios SET nombre= 'Carlitos' WHERE id_usuarios = $id";
 

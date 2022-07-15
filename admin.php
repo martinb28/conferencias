@@ -1,17 +1,6 @@
 <?php
 include 'functions/conexion.php';
 
-$usuario = $_POST['usuario'];
-$password = $_POST['password'];
-
-if($usuario == "admin@admin.com" && $password == "123456" ){
-    echo "bienvenido admin";    
-
-    include 'tablero.php';
-}else{
-    echo "acceso erroneo";
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -30,10 +19,10 @@ if($usuario == "admin@admin.com" && $password == "123456" ){
 <body>
 <h1>ADMIN</h1>
 
-<form class="row g-3" action="" method="POST">
+<form class="row g-3" action="validacion.php" method="POST">
   <div class="col-auto">
     <label for="staticEmail2" class="visually-hidden">Email</label>
-    <input type="text" class="form-control" id="staticEmail2" value="email@example.com" name="usuario">
+    <input type="text" class="form-control" id="staticEmail2" placeholder="Usuario" name="usuario">
   </div>
   <div class="col-auto">
     <label for="inputPassword2" class="visually-hidden">Password</label>
