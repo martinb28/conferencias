@@ -56,7 +56,7 @@ if($usuario=="admin" && $password=="123456"){
       <th scope="row"> <?php echo $filaTD['edad']; ?> </th>
       <th scope="row"> <a href="eliminar.php?id=<?php echo $filaTD['id_usuarios']; ?>"> ELIMINAR </a> </th>
 
-      <th scope="row"> <a href="actualizar.php?id=<?php echo $filaTD['id_usuarios']; ?>"> EDITAR</a> </th>
+      <th scope="row"> <a href="update.php?id=<?php echo $filaTD['id_usuarios']; ?>"> EDITAR</a> </th>
     </tr>
     <?php } ?>
 
