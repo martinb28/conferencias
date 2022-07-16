@@ -19,4 +19,7 @@ if($resultadoUpdate){
 }else{
   echo "No se pudo realizar";
 }
+
+header('Refresh: 2; url=admin.php');
+
 ?>
